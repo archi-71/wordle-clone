@@ -1,0 +1,287 @@
+body {
+    margin:0px;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 116px;
+    height: 42px;
+    margin: 10px;
+}
+
+hr {
+    border-color: rgb(120,124,126);
+    border-top: none;
+    margin: 3px 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 58px 58px 58px 58px 58px;
+    gap: 8px;
+    margin-top: 44px;
+  }
+  
+.grid > div {
+    width: 58px;
+    height: 58px;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(211,214,218);
+}
+
+.full-box {
+    border: 2px solid rgb(135,138,140) !important;
+}
+
+@keyframes grow {
+    0% {
+        border: 2px solid rgb(211,214,218);
+    }
+    25% {
+        border: 2px solid rgb(135,138,140);
+        transform: scale(1.1)
+    }
+    100%  {
+        border: 2px solid rgb(135,138,140);
+    }
+}
+
+.anim-grow {
+    animation: grow 0.1s linear 0s 1 forwards;
+}
+
+@keyframes flipToGreen {
+    0% {
+        transform: scaleY(1);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+    }
+    49% {
+        transform: scaleY(0);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+
+    }
+    51% {
+        transform: scaleY(0);
+        color: white;
+        background-color: rgb(106,169,100);
+        border: 2px solid rgb(106,169,100);
+    }
+    100% {
+        transform: scaleY(1);
+        color: white;
+        background-color: rgb(106,169,100);
+        border: 2px solid rgb(106,169,100);
+    }
+}
+
+.anim-flipToGreen {
+    animation: flipToGreen 0.3s linear 0s 1 forwards;
+}
+
+@keyframes flipToYellow {
+    0% {
+        transform: scaleY(1);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+    }
+    49% {
+        transform: scaleY(0);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+
+    }
+    51% {
+        transform: scaleY(0);
+        color: white;
+        background-color: rgb(201,180,88);
+        border: 2px solid rgb(201,180,88);
+    }
+    100% {
+        transform: scaleY(1);
+        color: white;
+        background-color: rgb(201,180,88);
+        border: 2px solid rgb(201,180,88);
+    }
+}
+
+.anim-flipToYellow {
+    animation: flipToYellow 0.3s linear 0s 1 forwards;
+}
+
+@keyframes flipToGrey {
+    0% {
+        transform: scaleY(1);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+    }
+    49% {
+        transform: scaleY(0);
+        color: black;
+        background-color: white;
+        border: 2px solid rgb(135,138,140);
+
+    }
+    51% {
+        transform: scaleY(0);
+        color: white;
+        background-color: rgb(120,124,126);
+        border: 2px solid rgb(120,124,126);
+    }
+    100% {
+        transform: scaleY(1);
+        color: white;
+        background-color: rgb(120,124,126);
+        border: 2px solid rgb(120,124,126);
+    }
+}
+
+.anim-flipToGrey {
+    animation: flipToGrey 0.3s linear 0s 1 forwards;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0px)
+    }
+    25% {
+        transform: translateX(3px)
+    }
+    50% {
+        transform: translateX(0px)
+    }
+    75% {
+        transform: translateX(-3px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.anim-shake {
+    animation: shake 0.1s linear 0s 4 forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 100%;
+        display: block;
+    }
+    80% {
+        opacity: 100%;
+        display: block;
+    }
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.anim-fade {
+    animation: fade 1s linear 0s 1 forwards;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+        color: white;
+        background-color: rgb(106,169,100);
+        border: 2px solid rgb(106,169,100);
+    }
+    25% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+        color: white;
+        background-color: rgb(106,169,100);
+        border: 2px solid rgb(106,169,100);
+    }
+}
+
+.anim-bounce {
+    animation: bounce 0.4s linear 0s 1 forwards;
+}
+
+.keyboard {
+    margin-top: 40px;
+}
+
+.keyboard > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard > div > div{
+    width: 43px;
+    height: 58px;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 4px 3px;
+}
+
+.grey-key {
+    color: white;
+    background-color: rgb(120,124,126);
+}
+
+.yellow-key {
+    color: white;
+    background-color: rgb(201,180,88);
+}
+
+.green-key {
+    color: white;
+    background-color: rgb(106,169,100);
+}
+
+.none-key {
+    color: black;
+    background-color: rgb(211,214,218);
+}
+
+.special-key {
+    width: 65px !important;
+    color: black;
+    background-color: rgb(211,214,218);
+}
+
+.message {
+    position: fixed;
+    display: none;
+    color: white;
+    background-color: black;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px;
+    border-radius: 5px;
+    z-index: 1;
+}
