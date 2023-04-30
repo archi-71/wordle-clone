@@ -1,3 +1,3 @@
 # WordleClone
 
-!(https://www.nytimes.com/games/wordle/index.html)
+![](https://www.nytimes.com/games/wordle/index.html)
