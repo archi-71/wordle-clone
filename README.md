@@ -1,4 +1,4 @@
-# WordleClone
+# Wordle Clone
 
 A clone of the popular online game 'Wordle' (https://www.nytimes.com/games/wordle/index.html), written with HTML, CSS and JavaScript.
 
