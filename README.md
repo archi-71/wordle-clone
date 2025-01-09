@@ -1,6 +1,6 @@
 # Wordle Clone
 
-Click [here](https://archi-71.github.io/WordleClone/) to see the project.
+Click [here](https://archi-71.github.io/wordle-clone/) to see the project.
 
 This project is a clone of the popular online game '[Wordle](https://www.nytimes.com/games/wordle/index.html)', written with HTML, CSS and JavaScript.
 
